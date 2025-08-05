@@ -27,7 +27,7 @@ list_of_files=[
 # here will create a directory
 
 for filepath in list_of_files:
-    filepath=Path(filepath)
+    filepath=Path(filepath) # it will give system generated path or / or \
     filedir,filename=os.path.split(filepath)
     
     """ how exist_ok works:if "directory" already exists, 
